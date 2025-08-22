@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 Upload an Item
+  p Fill out the form below to post a new item.
+  form(action="/upload", method="post")
+    label(for="itemName") Item Name:
+    br
+    input(type="text", id="itemName", name="itemName", required)
+    br
+    br
+    label(for="itemDescription") Description:
+    br
+    textarea(id="itemDescription", name="itemDescription", rows="4", cols="50")
+    br
+    br
+    label(for="price") Price:
+    br
+    input(type="number", id="price", name="price", required)
+    br
+    br
+    input(type="submit", value="Submit")

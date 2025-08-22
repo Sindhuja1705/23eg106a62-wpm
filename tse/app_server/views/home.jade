@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  div.container
+    h1.display-4.text-center Welcome to Campus Marketplace! 👋
+    p.lead.text-center Your one-stop shop for buying and selling textbooks and supplies.
+    hr.my-4
+    div.row.text-center
+      div.col-md-4
+        h3 Buy 🛒
+        p Browse a wide variety of used textbooks, lab equipment, and art supplies at great prices.
+        a.btn.btn-primary(href="/browse") Browse Items
+      div.col-md-4
+        h3 Sell 💰
+        p Easily list your old textbooks and unused supplies to get some cash back.
+        a.btn.btn-success(href="/upload") Upload an Item
+      div.col-md-4
+        h3 Exchange 🤝
+        p Find students on campus to trade materials you no longer need.
+        a.btn.btn-info(href="#") Learn More
